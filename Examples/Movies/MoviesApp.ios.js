@@ -22,6 +22,7 @@ var {
   AppRegistry,
   NavigatorIOS,
   StyleSheet,
+  Image,
 } = ReactNative;
 
 var SearchScreen = require('./SearchScreen');
@@ -29,13 +30,7 @@ var SearchScreen = require('./SearchScreen');
 var MoviesApp = React.createClass({
   render: function() {
     return (
-      <NavigatorIOS
-        style={styles.container}
-        initialRoute={{
-          title: 'Movies',
-          component: SearchScreen,
-        }}
-      />
+      <Image source={{uri: "http://apng.onevcat.com/assets/elephant.gif"}} style={{width: 240, height: 200}} />
     );
   }
 });
